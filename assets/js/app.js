@@ -23,7 +23,7 @@ var chart = svg.append("g")
 // Import data 
 d3.csv("assets/data/data.csv", function(err, healthdata) {
   if (err) throw err;
- 
+  
  // Step 1: Parse Data/Cast as numbers
  healthdata.forEach(function(d) {
     d.poverty = +d.poverty;
